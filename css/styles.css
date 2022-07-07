@@ -31,6 +31,10 @@ body {
 h1,h2,h3 {
     color: var(--title-text-color);
 }
+h1,h2,h3,h4,p,ul {
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -68,6 +72,19 @@ h1,h2,h3 {
     color: var(--accent-color);
 }
 
+.section {
+    /* padding-top: 47px;
+    padding-bottom: 47px; */
+   
+}
+.container {
+    outline: 2px solid mediumseagreen;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
 /* auth-nav */
 .auth-nav .link {
     color: var(--primary-text-color);
@@ -85,9 +102,13 @@ h1,h2,h3 {
 /* main */
 /* hero */
 .hero {
+    text-align: center;
+    outline: 2px solid mediumseagreen;
     background-color: var(--bg-color-grey);
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -103,9 +124,24 @@ h1,h2,h3 {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 32px;
+}
+.hero .button:hover,
+.hero .button:focus {
+    background-color: #188CE8;
 }
 
 /* особенности*/
+.feature {
+    padding-top: 97px;
+    padding-bottom: 97px;
+}
 .feature-list .title {
     font-size: 14px;
     line-height: 1.14;
@@ -116,14 +152,21 @@ h1,h2,h3 {
 }
 
 /* чем мы занимаемся */
+.activity {
+    padding-top: 0;
+    padding-bottom: 97px;
+}
 .section-title {
     font-size: 36px;
     line-height: 1.16;
+    text-align: center;
 }
 
 /* наша команда */
 .team {
     background-color: var(--bg-color-white-grey);
+    padding-top: 97px;
+    padding-bottom: 97px;
 }
 .team-list h3 {
     font-weight: 500;
@@ -138,6 +181,8 @@ h1,h2,h3 {
 /* footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: var(--primary-white-color);
     background-color: var(--bg-color-grey);
 }
@@ -179,6 +224,8 @@ address a{
 
 /* шаблон для УДАЛЕНИЯ ТОЧЕК в списках */
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
