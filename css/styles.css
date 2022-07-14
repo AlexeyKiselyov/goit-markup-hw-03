@@ -91,7 +91,7 @@ address {
 }
 
 .container {
-  outline: 2px solid mediumseagreen;
+  /* outline: 2px solid mediumseagreen; */
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -99,6 +99,9 @@ address {
 }
 
 /* ----------HEADER----------- */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header .container {
   display: flex;
@@ -125,7 +128,7 @@ address {
   color: var(--accent-color);
 }
 
-/* -------site-nav-------- */
+/* ----------Site-nav-------- */
 .nav-list {
   display: flex;
   margin-left: 92px;
@@ -157,7 +160,7 @@ address {
   color: var(--accent-color);
 }
 
-/* -------auth-nav------- */
+/* -------Auth-Nav------- */
 
 .auth-nav {
   display: flex;
@@ -192,6 +195,11 @@ address {
 /* ----------Hero----------- */
 .hero {
   background-color: var(--bg-color-grey);
+}
+
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero > .container {
@@ -345,7 +353,7 @@ address {
   color: var(--accent-color);
 }
 
-/* адрес */
+/* ---------- Address -------- */
 .footer address {
   margin-top: 10px;
 }
@@ -379,8 +387,18 @@ address a {
   color: var(--accent-color);
 }
 
-/* ПОРТФОЛИО страница */
-/* кнопки */
+/* -------------PORTFOLIO PAGE------------ */
+
+/* -------------Buttons-Filter------------ */
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  min-width: 73px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .filter-list .button {
   background-color: var(--bg-color-white-grey);
   color: var(--title-text-color);
@@ -389,18 +407,43 @@ address a {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  border-color: transparent;
   cursor: pointer;
 }
 .filter-list .button:hover,
 .filter-list .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-list .button.current {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/* примеры работ */
+/* ---------- Work examples ----------- */
+.examples-list {
+  display: flex;
+  flex-basis: 370px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.examples-text {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .examples-card {
   text-decoration: none;
 }
